@@ -4,7 +4,7 @@ title: zeitiv.dev Portfolio
 
 fonts:
   sans: Fira Code
-  serif: Robot Slab
+  serif: Ubuntu
   mono: Fira Code
 
 twoslash: true
@@ -45,29 +45,43 @@ url: https://zeitiv.dev
 ---
 layout: two-cols-header
 ---
-# Technologies
+<h1 class="font-serif mb-8">Tech Stack</h1>
 
 
-<div class="container flex flex-row gap-8 justify-between">
-<section class="px-8 py-4 rounded-xl bg-dark/10 backdrop-blur-sm border-3 border-dark shadow-xl">
-  <h2>Frontend</h2>
-
-  <ul>
-    <li>Astro</li>
-    <li>UnoCSS</li>
-    <li>TypeScript</li>
+<div class="container flex flex-row gap-32 align-middle h-full !mt-4">
+<section class="px-8 py-4 rounded-xl bg-dark/10 backdrop-blur-sm border-3 border-dark shadow-xl text-xl">
+  <h2 class="font-serif mb-2">cv frontend</h2>
+  <ul class="">
+    <div class="list-none" v-click>
+      <div class="i-logos:angular-icon"></div>
+      <span>angular 18 -></span>
+      <span v-click class="!py-1.5 !px-2  !bg-light/10 !rounded !shadow-inner border-[#72CCFC] border-0 shadow-dark/80 text-sm hover:scale-105 text-white">
+        <span class="text-[#72CCFC]">signal</span>
+        <span class="text-pink">{{"<"}}</span>
+        <span class="text-emerald">ContactForm</span>
+        <span class="text-pink">{{">"}}</span>(<span class="text-purple">{}</span>);
+      </span>
+    </div>
+    <div class="list-none" v-click>astro</div>
+    <div class="list-none" v-click>bunJS</div>
+    <div class="list-none" v-click>
+      <span>unoCSS -> </span>
+      <span v-click  class="!px-2 !py-1 !bg-light/10 !rounded !shadow-inner shadow-dark/80">
+        <span class="text-white/80  border-dark-300 text-sm">'@unocss/reset/tailwind.css'</span>
+      </span>
+    </div class="list-none" v-click>
+    <div class="list-none" v-click>TypeScript</div>
   </ul>
-
 </section>
 
 
-<section class="p-8 rounded-xl bg-dark/10 backdrop-blur-sm border-3 border-dark shadow-xl">
-  <h2>Backend</h2>
+<section v-click class="px-8 py-4 rounded-xl bg-dark/10 backdrop-blur-sm border-3 border-dark shadow-x text-xl" >
+  <h2 class="font-serif mb-2">contact backend</h2>
   <ul>
-    <li>BunJS</li>
-    <li>Elysia</li>
-    <li>TypeScript</li>
-    <li>ViteJS</li>
+    <div>BunJS</div>
+    <div>Elysia</div>
+    <div>TypeScript</div>
+    <div>ViteJS</div>
   </ul>
 </section>
 </div>
@@ -78,6 +92,9 @@ layout: two-cols-header
 
 # Project Architecture
 
+<section class="px-8 py-4 rounded-xl bg-dark/10 backdrop-blur-sm border-3 border-dark shadow-xl" >
+
+
 The portfolio website is structured with modular components:
 
 - About
@@ -86,11 +103,46 @@ The portfolio website is structured with modular components:
 - Education
 - Contact (Angular Component)
 
-
+</section>
 
 ---
 
+# NAV
+
+
+```html
+
+<nav
+  class="flex sm:flex-col flex-wrap justify-between gap-2 sm:gap-4 text-grey text-xl uppercase"
+  id="sidenav"
+>
+  <a href="/#about" class="flex items-center transition-all hover:text-white" aria-label="About">
+    <span class="i-ic:round-info size-10 sm:hidden"></span>
+    <span class="hidden sm:inline">About</span>
+  </a>
+  <a id="exp-link" href="/#experience" class="flex items-center transition-all hover:text-white" aria-label="Experience">
+    <span class="i-ic:round-work size-10 sm:hidden"></span>
+    <span class="hidden sm:inline">Experience</span>
+  </a>
+  <a id="edu-link" href="/#education" class="flex items-center transition-all hover:text-white" aria-label="Education">
+    <span class="i-ic:round-school size-10 sm:hidden"></span>
+    <span class="hidden sm:inline">Education</span>
+  </a>
+  <a id="skills-link" href="/#skills" class="flex items-center transition-all hover:text-white" aria-label="Skills">
+    <span class="i-ic:round-build size-10 sm:hidden"></span>
+    <span class="hidden sm:inline">Skills</span>
+  </a>
+</nav>
+
+```
+
+
+
+---
 # CI/CD Pipeline
+
+<section class="px-8 py-4 rounded-xl bg-dark/10 backdrop-blur-sm border-3 border-dark shadow-xl" >
+
 
 ## Trigger
 -> Activated on commits to the main branch or pull requests.
@@ -104,9 +156,14 @@ The portfolio website is structured with modular components:
 
 -> Generates a report in pull request comments upon successful deployment.
 
+
+</section>
+
 ---
 
 # Highlighting Key Features
+
+<section class="px-8 py-4 rounded-xl bg-dark/10 backdrop-blur-sm border-3 border-dark shadow-xl" >
 
 
 
@@ -122,6 +179,34 @@ const testString = "Hello **World**";
 console.log(parseBold(testString));
 
 ```
+
+</section>
+
+
+---
+scale: 0.5
+---
+# Test
+
+
+---
+# Magic
+
+````md magic-move
+```js
+console.log(`Step ${1}`)
+```
+```js
+console.log(`Step ${1 + 1}`)
+```
+```ts
+console.log(`Step ${3}` as string)
+```
+````
+
+
+---
+
 
 ---
 layout: end
