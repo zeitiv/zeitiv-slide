@@ -29,8 +29,18 @@ html:not(.dark) {
 }
 
 pre[class*='language-'] {
-  @apply p-4 radius-lg;
 }
+
+
+#app #slide-content .slidev-code.shiki {
+  --at-apply: p-4 radius-lg bg-transparent backdrop-blur rounded-xl !important;
+  background: transparent !important;
+}
+
+.slidev-code-wrapper {
+  --at-apply: p-4 radius-lg bg-transparent backdrop-blur rounded-xl !important;
+}
+
 
 :not(pre)>code {
   font-size: 0.9em;
