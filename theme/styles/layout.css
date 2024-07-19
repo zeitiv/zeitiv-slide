@@ -66,7 +66,7 @@
 
     /* ℹ️ Update background color of code. We made it darker so we don't get same color for slide bg & code bg. */
     .slidev-code.shiki {
-      background: hsla(231, 14%, 10%, 0.18) !important;
+      background: transparent !important;
       --at-apply: backdrop-blur rounded-xl p-5;
     }
 
