@@ -54,10 +54,6 @@ url: https://zeitiv.dev
 
 ## zeitiv.dev
 
----
-layout: iframe
-url: https://zeitiv.dev
----
 
 ---
 
