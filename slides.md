@@ -34,6 +34,9 @@ title: serif
 <Toc />
 
 ---
+hideInToc: true
+
+---
 
 # Introduction <mdi-account-circle class="text-3xl ml-2" />
 
@@ -50,6 +53,11 @@ url: https://zeitiv.dev
 # Project Overview <logos-astro class="text-3xl ml-2" />
 
 ## zeitiv.dev
+
+---
+layout: iframe
+url: https://zeitiv.dev
+---
 
 ---
 
@@ -135,7 +143,7 @@ url: https://zeitiv.dev
 <div class="grid grid-cols-2 gap-4">
 
 <section class="px-8 py-4 rounded-xl bg-dark/10 backdrop-blur-sm border-3 border-dark shadow-xl text-xl h-full">
-<img src="image.png" />
+<img src="/image.png" />
 </section>
 
 <section class="px-8 py-4 rounded-xl bg-dark/10 backdrop-blur-sm border-3 border-dark shadow-xl text-xl h-full">
@@ -179,33 +187,6 @@ url: https://zeitiv.dev
 - <mdi-ab-testing class="text-purple-500" /> Implement A/B testing for optimizing user engagement
 - <mdi-cellphone-link class="text-red-500" /> Explore PWA capabilities for offline access and improved mobile experience
 
----
-
-# Questions? <mdi-help-circle class="text-3xl ml-2" />
-
-<div class="flex justify-center items-center h-full">
-  <h2 class="text-4xl font-bold">Thank you for your attention!</h2>
-</div>
-
----
-
-# Thank You! <mdi-hand-wave class="text-3xl ml-2 text-yellow-400" />
-
-<div class="flex flex-col items-center justify-center h-full">
-  <h2 class="text-5xl font-bold mb-4">Alex Grädel</h2>
-  <p class="text-2xl">Frontend Developer</p>
-  <div class="flex mt-8 space-x-4">
-    <a href="https://github.com/yourusername" target="_blank" rel="noopener noreferrer">
-      <mdi-github class="text-4xl hover:text-gray-300 transition-colors" />
-    </a>
-    <a href="https://linkedin.com/in/yourusername" target="_blank" rel="noopener noreferrer">
-      <mdi-linkedin class="text-4xl hover:text-blue-400 transition-colors" />
-    </a>
-    <a href="mailto:your.email@example.com">
-      <mdi-email class="text-4xl hover:text-red-400 transition-colors" />
-    </a>
-  </div>
-</div>
 
 ---
 # Future Improvements <mdi-rocket-launch class="text-3xl ml-2" />
@@ -234,15 +215,22 @@ url: https://zeitiv.dev
 </div>
 
 ---
+hideInToc: true
 
+---
 # Questions? <mdi-help-circle class="text-3xl ml-2" />
 
 <div class="flex justify-center items-center h-full">
   <h2 class="text-4xl font-bold">Thank you for your attention!</h2>
 </div>
 
----
 
+
+---
+hideInToc: true
+---
+hideInToc: true
+---
 # Thank You! 
 
 <div class="flex flex-col items-center justify-center h-full">
